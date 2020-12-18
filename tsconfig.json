@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -19,7 +18,22 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "natlib": [
+        "dist/natlib/natalert",
+        "dist/natlib",
+        "dist/natalert"
+      ],
+      "@natlib/natalert": [
+        "dist/natlib/natalert/natlib-natalert",
+        "dist/natlib/natalert"
+      ],
+      "@natlib/natdialog": [
+        "dist/natlib/natdialog/natlib-natdialog",
+        "dist/natlib/natdialog"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,

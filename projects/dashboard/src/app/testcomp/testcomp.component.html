@@ -1,0 +1,24 @@
+
+
+<p> nat is here</p>
+<button mat-button (click)= "startalert()"> error</button>
+<button mat-button (click)= "startalert1()"> info</button>
+<button mat-button (click)= "startalert2()"> warn</button>
+<button mat-button (click)= "startalert3()"> success</button>
+ 
+<mat-card class="login-card">
+  <nat-alert fxLayout="column" (alertemit)="chatch($event)" fxLayoutAlign="center center" class="alle"></nat-alert>
+</mat-card>
+
+
+<br>
+<p> nat is here</p>
+<button mat-button (click)= "startalert4()"> error</button>
+<button mat-button (click)= "startalert5()"> info</button>
+<button mat-button (click)= "startalert6()"> warn</button>
+<button mat-button (click)= "startalert7()"> success</button>
+ 
+<mat-card class="login-card">
+  <nat-alert fxLayout="column" [singleton] = "false" (alertemit)="chatch($event)" [id]="id2" fxLayoutAlign="center center" class="alle"></nat-alert>
+</mat-card>
+

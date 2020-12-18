@@ -1,0 +1,22 @@
+<!--div class ="snotify-backdrop">
+<div class ="snotify snotify-leftBottom"-->
+<div *ngIf="alerts">
+    <div *ngFor="let m of alerts">
+      <div *ngIf = "id === m.id">  
+        <mat-card class = "{{cssClass(m)}}"  matBadgePosition="above after" [matBadgeHidden]="m.autoclosesec <= 0" [matBadge]="m.autoclosesec" >          
+          
+
+         <!--span class="closebtn" *ngIf = "m.canclose === 'yes'" (click)="removeAlert(m)">&times;</span--> 
+         <a class="closebtn"  *ngIf = "m.canclose === 'yes'" (click)="removeAlert(m)">
+          <mat-icon>close</mat-icon>
+          <!--mat-icon matBadgePosition="above after" matBadgeOverlap="false" [matBadge]="m.autoclosesec" >close</mat-icon-->
+         </a>
+         <!--span class="counter" *ngIf = "m.autoclosesec > 0" >{{m.autoclosesec}}</span-->  
+          <!--{{ m.content }}    --> 
+     
+        
+          <div [innerHTML]= "m.message"></div>
+        </mat-card>
+    </div>
+    </div>
+  </div>

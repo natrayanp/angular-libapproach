@@ -1,0 +1,74 @@
+
+/* The alert message box */
+.alert {
+    //position: sticky;
+  //  padding: 20px;
+   // background-color: #f44336; /* Red */
+   // color: white;
+    margin-bottom: 5px;
+    //border-radius: 8px;
+    //font-size: 20px;
+
+    position: fixed;
+   // width: $snotify-width;
+    background-color: green;
+    box-sizing: border-box;
+
+}
+
+/* The close button */
+.closebtn {
+    //display: inline;
+    //margin-left: 5px;
+    color: red;
+    font-weight: bold;
+    float: right;
+    font-size: 5px;
+    //line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+.alert-error{
+    //background-color: #EDDBDA;
+    //background-color:#f44336;
+    //color:#96443D;
+    color:#000;
+    background-color: #ffdddd;
+
+
+}
+
+.alert-success{
+    //background-color: #DFEDD5;
+    //color:#43693B;
+    //border-color:#43693B;
+
+    //background-color:#91c89c;
+    //border-color:#91c89c;
+    background-color:#ddffdd;
+    color:#000;
+    //color:#FFEBE6;
+        
+}
+
+.alert-info{
+    background-color: #ddffff;
+    color:#000;
+    border-color:#ddffff;
+}
+
+.alert-warning {
+    background-color: #ffffcc;
+    //color:#ff1800;
+    color:#000;    
+    border-color:#ffffcc;
+}
+
